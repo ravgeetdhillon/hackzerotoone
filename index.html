@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no" />
+    <meta name="theme-color" content="#F5F5FE" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Hack Zero To One - Edition 2.0 is a 30 hour hackathon contest orgainsed by CESS Society of Guru Nanak Dev University." />
+    <link rel="icon" sizes="192x192" href="./images/favi192.png" />
+    <link rel="apple-touch-icon" href="./images/favi192.png" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,350,400,450,500,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/animate.min.css" />
+    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Hack Zero To One - Edition 2.0</title>
+</head>
+<body>
+    <div class="loader animated fast">
+        <img src="./images/spacer.png" />
+    </div>
+    <div class="dropdown">
+        <div class="row">
+            <p><a href="#timeline" onclick="toSection(this);return false;">Timeline</a></p>
+            <p><a href="#rules" onclick="toSection(this);return false;">Rules & FAQs</a></p>
+            <p><a href="#sponsers" onclick="toSection(this);return false;">Sponsers</a></p>
+            <p><a href="#team" onclick="toSection(this);return false;">Our Team</a></p>
+            <p><a href="#social" onclick="toSection(this);return false;">Social Presence</a></p>
+            <a href="#register" style="color:var(--white);" onclick="toSection(this);return false;"><p id="reg">Register Now</p></a>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="row">
+            <div class="logo" onclick="window.location.href = 'https://hackathon.cessgndu.com';return false;" >
+                <img src="./images/hacklogo.png" title="Hack Zero To One Logo" />
+                <p>Hack Zero To One</p>
+            </div>
+            <div class="links">
+                <p><a href="#timeline">Timeline</a></p>
+                <p><a href="#rules">Rules & FAQs</a></p>
+                <p><a href="#sponsers">Sponsers</a></p>
+                <p><a href="#team">Our Team</a></p>
+                <p><a id="registerBtn" href="#register">Register Now</a></p>
+                <i class="icon fas fa-bars" onclick="showHideDropDown();return false;"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="holder">
+            <div class="timer">
+                <div class="sub">
+                    <div class="col" id="days">
+                        <h1></h1>
+                        <h4>Days</h4>
+                    </div>
+                    <div class="col" id="hours">
+                        <h1></h1>
+                        <h4>Hours</h4>
+                    </div>
+                </div>
+                <div class="sub" id="minutes">
+                    <div class="col">
+                        <h1></h1>
+                        <h4>Minutes</h4>
+                    </div>
+                    <div class="col" id="seconds">
+                        <h1></h1>
+                        <h4>Seconds</h4>
+                    </div>
+                </div>
+            </div>
+            <h2 class="title">Hack Zero To One</h2>
+            <h2 class="venue">March 8, 2018 Amritsar</h2>
+        </div>
+    </div>
+
+    <div class="rules" id="rules">
+        <h2 class="heading">Frequently Asked Questions</h2>
+        <p class="details">Intelligence is the buzz word and we provide you answers to some of the most asked questions related to this event.</p>
+        <h1></h1>
+        <div class="row">
+            <div class="col">
+                <div class="sub">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Hackathon? What?</h3>
+                </div>
+                <div class="sub">
+                    <i></i>
+                    <p>It's just an event, where programmers meet to engage in collaborative computer programming environment. In short, a full dose of fun.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="sub">
+                    <i class="fas fa-university"></i>
+                    <h3>Who can come?</h3>
+                </div>
+                <div class="sub">
+                    <i></i>
+                    <p>Zero to One Hackathon applications are open to any college student, currently pursuing higher education in India.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="sub">
+                    <i class="fas fa-money-check"></i>
+                    <h3>Can I Afford it?</h3>
+                </div>
+                <div class="sub">
+                    <i></i>
+                    <p>Hack Zero to One costs only <b>&#8377;149/participant</b>. We provide you free meals, caffeine, swag, workspace, and WiFi for the event.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="sub">
+                    <i class="fas fa-tablet-alt"></i>
+                    <h3>What Should I Bring?</h3>
+                </div>
+                <div class="sub">
+                    <i></i>
+                    <p>All you need is a valid student ID and a laptop. Rest is our headache. Pillow Bag is recommended though.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="sub">
+                    <i class="far fa-question-circle"></i>
+                    <h3>Any doubt?</h3>
+                </div>
+                <div class="sub">
+                    <i></i>
+                    <p>Hit us up at<br /><b>cess.gndu@gmail.com</b><br />We are always there for you.</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <div class="plan" id="timeline">
+        <div class="row">
+            <div class="col">
+                <h2 class="heading">What's the Plan?</h2>
+                <p class="details">It's always good to know about the event's schedule, so you can do some handy preparations before the event.</p>
+            </div>
+            <div class="col">
+                <div class="sub">
+                    <div class="day">
+                        <h3>Day 1</h3>
+                    </div>
+                    <div class="time">
+                        <div class="box hover">
+                            <h4>9:00</h4>
+                            <p>Event Starts. Teams arrive and get their respective IDs. Workspace is alloted as well.</p>
+                        </div>
+                        <div class="box">
+                            <h4>10:00</h4>
+                            <p>The real challenge begins. Teams brainstorm to discuss the plan, work flow and task assignment to start the development process.</p>
+                        </div>
+                        <div class="box">
+                            <h4>13:00</h4>
+                            <p>After the event has picked up the pace, here comes the time for first Keynote talk.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub">
+                    <div class="day">
+                        <h3>Day 2</h3>
+                    </div>
+                    <div class="time">
+                        <div class="box">
+                            <h4>10:00</h4>
+                            <p>Development and Implementation time is up and the final product is submitted for evaluation.</p>
+                        </div>
+                        <div class="box">
+                            <h4>11:00</h4>
+                            <p>Flash talk sessions and Panel discussions are held where final products are reviewed and revealed to the audience.</p>
+                        </div>
+                        <div class="box">
+                            <h4>15:00</h4>
+                            <p>Results are declared and winning products are faciliated with prizes. Happy Ending with closing notes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="themes">
+        <div class="row">
+            <div class="col">
+                <h2 class="heading">Themes</h2>
+                <p class="details">We will be disclosing the themes 2-3 days prior to the event. Stay Tuned.</p>
+                <!-- <p class="details">Pick the best category that suits you and develop an astonishing product as a gift to the society.</p> -->
+            </div>
+            <!-- <div class="col">
+                <i class="fas fa-briefcase-medical"></i>
+                <h4>health</h4>
+            </div>
+            <div class="col">
+                <i class="fas fa-graduation-cap"></i>
+                <h4>education</h4>
+            </div>
+            <div class="col">
+                <i class="fas fa-venus"></i>
+                <h4>women safety</h4>
+            </div>
+            <div class="col">
+                <i class="fas fa-globe-americas"></i>
+                <h4>environment</h4>
+            </div>
+            <div class="col">
+                <i class="fas fa-traffic-light"></i>
+                <h4>traffic</h4>
+            </div>
+            <div class="col">
+                <i class="fas fa-building"></i>
+                <h4>infrastructure</h4>
+            </div>
+            <div class="col">
+                <i class="fas fa-leaf"></i>
+                <h4>agriculture</h4>
+            </div>
+            <div class="col">
+                <i class="fas fa-people-carry"></i>
+                <h4>social welfare</h4>
+            </div>
+            <div class="col">
+                <i class="fas fa-blind"></i>
+                <h4>disability</h4>
+            </div>
+            <div class="col">
+                <i class="fas fa-plane-departure"></i>
+                <h4>travel</h4>
+            </div>
+            <div class="col">
+                <i class="fas fa-keyboard"></i>
+                <h4>digital Literacy</h4>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="sponsers" id="sponsers">
+        <h2 class="heading" id="rules">Event Sponsers</h2>
+        <p class="details">No event is successful without the support of the sponsers. Want to be our sponser, <a href="">apply here</a>.</p>
+        <div class="row">
+            <div class="col">
+                <img onclick="window.open('https://github.com')" src="./images/logo_github.png" alt="Github Logo" />
+            </div>
+            <div class="col">
+                <img onclick="window.open('https://producthunt.com')" src="./images/logo_producthunt.png" alt="Product Hunt Logo" />
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery" id="edition1">
+        <div class="row">
+            <div class="row1">
+                <div class="col">
+                    <h2 class="heading">Edition 1.0</h2>
+                    <p class="details">Last year was our debut. We had a dream of bringing the best programming talent together and thank God, we were successful. Lots of memories were made by the participants as well as by the organising team.<br /><br />Have a look at few of the selected moments.</p>
+                </div>
+                <div class="col">
+                    <img src="./images/gallery/i6.jpg" title="CESS Team with happy faces." />
+                </div>
+                <div class="col">
+                    <img src="./images/gallery/i2.jpg" title="A dignatory presenting speech." />
+                </div>
+                <div class="col">
+                    <img src="./images/gallery/i4.jpg" title="A student giving instructions." />
+                </div>
+            </div>
+            <div class="row2">
+                <div class="col">
+                    <img src="./images/gallery/i5.jpg" title="Teams working on their projects." />
+                </div>
+                <div class="col">
+                    <img src="./images/gallery/i3.jpg" title="The winners and judges at the closing moments." />
+                </div>
+                <div class="col">
+                    <img src="./images/gallery/i1.jpg" title="High Tech Computer Science Lab." />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="meme">
+        <div class="row">
+            <div class="card">
+                <div class="icon-holder">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <div class="info">
+                    <h2>eat</h2>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon-holder">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="info">
+                    <h2>code</h2>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon-holder">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="info">
+                    <h2>chat</h2>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon-holder">
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div class="info">
+                    <h2>repeat</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team" id="team">
+        <h2 class="heading" id="rules">Our Team</h2>
+        <p class="details">These are those individuals who are trying their best to provide you with one of the most memorable experiences you ever had.</p>
+        <div class="row">
+            <div class="col">
+                <div class="img-holder">
+                    <img src="images/cessteam/puneet.jpg" title="Puneet Saini" />
+                </div>
+                <div class="info">
+                    <p>Puneet Saini</p>
+                    <div class="social">
+                        <p><a href="https://www.github.com/puneet29" target="_blank"><i class="fab fa-github"></i></a></p>
+                        <p><a href="https://www.instagram.com/puneetsaini" target="_blank"><i class="fab fa-instagram"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="img-holder">
+                    <img src="images/cessteam/ravgeet.jpg" title="Ravgeet Dhillon" />
+                </div>
+                <div class="info">
+                    <p>Ravgeet Dhillon</p>
+                    <div class="social">
+                        <p><a href="https://www.github.com/ravgeetdhillon" target="_blank"><i class="fab fa-github"></i></a></p>
+                        <p><a href="https://www.instagram.com/ravd_ravgeet" target="_blank"><i class="fab fa-instagram"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="img-holder">
+                    <img src="images/cessteam/rishab.jpg" title="Rishab Chawla" />
+                </div>
+                <div class="info">
+                    <p>Rishab Chawla</p>
+                    <div class="social">
+                        <!-- <p><a href="" target="_blank"><i class="fab fa-github"></i></a></p> -->
+                        <p><a href="https://www.instagram.com/rishabchawla23" target="_blank"><i class="fab fa-instagram"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="img-holder">
+                    <img src="images/cessteam/mohit.jpg" title="Mohit Sharma" />
+                </div>
+                <div class="info">
+                    <p>Mohit Sharma</p>
+                    <div class="social">
+                        <p><a href="https://www.github.com/mohitsharma98" target="_blank"><i class="fab fa-github"></i></a></p>    
+                        <p><a href="https://www.instagram.com/_mohit._.sharma_" target="_blank"><i class="fab fa-instagram"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="img-holder">
+                    <img src="images/cessteam/rumeet.jpg" title="Rumeet Singh" />
+                </div>
+                <div class="info">
+                    <p>Rumeet Singh</p>
+                    <div class="social">
+                        <p><a href="https://www.instagram.com/rumeet._.singh" target="_blank"><i class="fab fa-instagram"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cess" id="about">
+        <h2 class="heading">About The Organiser</h2>
+        <div class="row">
+            <div class="col">
+                <img src="./images/cesslogo.png" title="CESS Logo" />
+            </div>
+            <div class="col">
+                <p>This event is coordinated by <b>Computer Engineering Student Society</b> (CESS) of Computer Engineering Department of Guru Nanak Dev University, Amritsar, India, which is ran by students under the guidance of Dr. Sandeep Sharma as a Head of Department. CESS being a student organisation, handle all the major events of the department. In October 2018, CESS orgainsed a mega <b>Polaris TechFest</b>, and it was a proud moment for the University.<br /><br />You can find more about CESS here:<br /><a href="https://cessgndu.com" target="_blank">https://cessgndu.com/</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="register" id="register">
+        <div class="row">
+            <div class="col">
+                <h2 class="heading">Send Proposal</h2>
+                <p class="details">Fill this proposal form for participating in Hack Zero To One, and if we find your idea interesting, you will definitely be invited.</p>
+                <img src="./images/slides1.png" title="Team Registration" />
+            </div>
+            <div class="col">
+                <iframe name="hidden_iframe" style="display:none;" id="hidden_iframe"></iframe>
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLScUWTuBHEsOGPgOiyLOjlZ7c2sf9XVB44fjiIdgVkL40iIshw/formResponse" method="POST" target="hidden_iframe" onsubmit="formSubmitAction();">
+                    <div class="sub">
+                        <label for="entry.1082572648">Team Name</label>
+                        <input type="text" title="Name of your team" name="entry.1082572648" placeholder="e.g. Code Warriors" required />
+                    </div>
+                    <br />
+                    <div class="sub">
+                        <label for="entry.876386890">Team Leader Name</label>
+                        <input type="text" title="Name of the leader" name="entry.876386890" placeholder="Full Name" required />
+                    </div>
+                    <br />
+                    <div class="sub">
+                        <label for="entry.50464477">Email</label>
+                        <input type="email" title="Email" name="entry.50464477" placeholder="@" required />
+                    </div>
+                    <br />
+                    <div class="sub">
+                        <label for="entry.256551630">Contact No.</label>
+                        <input type="text" title="Phone No." name="entry.256551630" placeholder="e.g. 98888XXXXX" required />
+                    </div>
+                    <br />
+                    <div class="sub">
+                        <label for="entry.1572435081">Institution</label>
+                        <input type="text" title="Institution Name" name="entry.1572435081" placeholder="Institution Name" required />
+                    </div>
+                    <br />
+                    <div class="sub">
+                        <label for="entry.2024739481">Total Team Members</label>
+                        <input type="number" title="Team Members" name="entry.2024739481" placeholder="Atmost 5, Least 1" min="1" max="5" onkeyup="displayMembers(this);" required />
+                    </div>
+                    <br />
+
+
+                    <div class="sub hidden-div">
+                        <label for="entry.776816628">Team Member Name(2nd)</label>
+                        <input type="text" title="Name of team member" name="entry.776816628" placeholder="Full Name" />
+                        <br />
+                    </div>
+                    <div class="sub hidden-div">
+                        <label for="entry.356508495">Team Member Name(3rd)</label>
+                        <input type="text" title="Name of team member" name="entry.356508495" placeholder="Full Name" />
+                        <br />
+                    </div>
+                    
+                    <div class="sub hidden-div">
+                        <label for="entry.1611652629">Team Member Name(4th)</label>
+                        <input type="text" title="Name of team member" name="entry.1611652629" placeholder="Full Name" />
+                        <br />
+                    </div>
+                    
+                    <div class="sub hidden-div">
+                        <label for="entry.1007806378">Team Member Name(5th)</label>
+                        <input type="text" title="Name of team member" name="entry.1007806378" placeholder="Full Name" />
+                        <br />
+                    </div>
+                    
+                    <div class="sub">
+                        <label for="entry.625277410">Github Profile Link</label>
+                        <input type="text" title="Your Innovative Idea" name="entry.625277410" placeholder="https://github.com/username" required />
+                    </div>
+                    <br />
+
+
+
+                    <div class="sub">
+                        <label for="entry.675683068">Your SOP</label>
+                        <textarea title="Your Innovative Idea" name="entry.675683068" placeholder="Describe in about 100 words..." maxlength="500" required></textarea>
+                    </div>
+                    <br />
+                    <div class="actions">
+                        <button type="submit">Send</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                </form>
+                <p id="msg" class="details"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="socialmedia" id="social">
+        <h2 class="heading" id="rules">Social Presence</h2>
+        <p class="details">We care about the relations and that's why we are socially so proactive. Come and be the part of the family.</p>
+        <div class="row">
+            <div class="col" onclick="openSocial('insta');return false;">
+                <div class="link insta">
+                    <p><i class="fab fa-instagram"></i></p>
+                </div>
+            </div>
+            <div class="col" onclick="openSocial('yt');return false;">
+                <div class="link yt">
+                    <p><i class="fab fa-youtube"></i></p>
+                </div>
+            </div>
+            <div class="col" onclick="openSocial('fb');return false;">
+                <div class="link fb">
+                    <p><i class="fab fa-facebook"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="row">
+            <div class="col">
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.9390208584937!2d74.82229615008553!3d31.63551994852207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39196527ad161459%3A0x54264c4d70431613!2sMaharaja+Ranjit+Singh+Bhawan!5e0!3m2!1sen!2sin!4v1549113957961" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="col">
+                <h2 class="heading">We gonna meet here</h2>
+                <p class="details">
+                    This hackathon is going to take place at Department of Computer Engineering in the premises of Guru Nanak Dev University, Amritsar.
+                    <br /><br />
+                    Save your directions now.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="row">
+            <p class="details">&copy; Hack Zero To One 2019</p>
+            <p class="details">Made with <i class="fas fa-heart" style="color: red;"></i> by <a href="https://cessgndu.com/team?team=1" target="_blank">CESS Code Squad</a></p>
+        </div>
+    </div>
+
+    <script src="./js/demo.js"></script>
+    <script src="./js/loader.js"></script>
+    <script src="./js/timer.js"></script>
+    <script src="./js/behaviour.js"></script>
+    <script src="./js/forms.js"></script>
+    
+</body> 
+</html>

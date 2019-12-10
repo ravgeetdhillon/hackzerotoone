@@ -1,0 +1,92 @@
+@keyframes changeColor{
+    0%{
+        color: var(--pink);
+    }
+    50%{
+        color: var(--purple);
+    }
+    100%{
+        color: var(--pink);
+    }
+}
+@-moz-keyframes changeColor{
+    0%{
+        color: var(--pink);
+    }
+    50%{
+        color: var(--purple);
+    }
+    100%{
+        color: var(--pink);
+    }
+}
+@-webkit-keyframes changeColor{
+    0%{
+        color: var(--pink);
+    }
+    50%{
+        color: var(--purple);
+    }
+    100%{
+        color: var(--pink);
+    }
+}
+
+@keyframes loadingAnime{
+    0%{
+        transform: skewY(-7.5deg);
+    }
+    50%{
+        transform: skewY(7.5deg);
+    }
+    100%{
+        transform: skewY(-7.5deg);
+    }
+}
+@-moz-keyframes loadingAnime{
+    0%{
+        transform: skewY(-7.5deg);
+    }
+    50%{
+        transform: skewY(7.5deg);
+    }
+    100%{
+        transform: skewY(-7.5deg);
+    }
+}
+@-webkit-keyframes loadingAnime{
+    0%{
+        transform: skewY(-7.5deg);
+    }
+    50%{
+        transform: skewY(7.5deg);
+    }
+    100%{
+        transform: skewY(-7.5deg);
+    }
+}
+
+@keyframes send{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes send{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes send{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
